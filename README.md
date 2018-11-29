@@ -40,7 +40,7 @@
 2 ส่วนสำหรับสรุปข้อมูลลูกค้า
 ```
 Code ที่สำคัญคือ
-jTA_c.setText("ประเภทห้อง : "+this.Re+"\n"+"คุณ "+this.name+" "+this.lastname+"\n"
+  jTA_c.setText("ประเภทห้อง : "+this.Re+"\n"+"คุณ "+this.name+" "+this.lastname+"\n"
                     +"เข้าพักตั้งแต่ : "+checkIn+" ถึง "+checkOut+"\n"+"เป็นเวลา : "+this.num+" วัน"+
                             "\n"+"จำนวน "+this.n+" ห้อง"+"\n"+"ราคา : "+price+" บาท");
  เมื่อกดปุ่มยืนยัน ก็จะทำการสรุปข้อมูลของลูกค้าให้
@@ -49,17 +49,17 @@ jTA_c.setText("ประเภทห้อง : "+this.Re+"\n"+"คุณ "+this
 ```
 จุดสำคัญคือ ช่องเลือกประเภทห้อง รูปจะเปลี่ยนไปตามประเภทห้องที่ผู้ใช้งานเลือก
 Code ที่สำคัญคือ
-image.setIcon(new javax.swing.ImageIcon(sm.Selec_Image(str)));
+  image.setIcon(new javax.swing.ImageIcon(sm.Selec_Image(str)));
 เพื่อทำการเปลี่ยนรูป
 ```
 4 ส่วนบันทึกข้อมูลลูกค้า
 ```
 Code ที่สำคัญคือ
-String[] o = {this.NDay,this.Re,this.n,this.name,this.lastname,this.DayIn,this.DayOut,this.num,this.price};
-setRow(o);
+  String[] o = {this.NDay,this.Re,this.n,this.name,this.lastname,this.DayIn,this.DayOut,this.num,this.price};
+  setRow(o);
 เพื่อทำการเช็ดค่าข้อมูลของลูกค้า
-DataUser.setVisible(true);
-this.setVisible(false);
+  DataUser.setVisible(true);
+  this.setVisible(false);
 เพื่อเปิดแสดงหน้าข้อมูลลูกค้า
 ```
 หน้าสอง
@@ -72,8 +72,8 @@ this.setVisible(false);
 2 ส่วนกลับไปยังหน้าแรก
 ```
 Code ที่สำคัญคือ
-DataUser.setVisible(false);
-this.setVisible(true);
+  DataUser.setVisible(false);
+  this.setVisible(true);
 เพื่อทำการกลับไปหน้าแรก
 ```
 
